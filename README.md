@@ -16,7 +16,7 @@ You can also run .ahk file for the same purpose but lose tray icon modifications
 
 ### Shortcuts
 
-**Ctrl+Shift+A**: Auto crop image (and accept changes with {Enter})
+**Ctrl+Shift+A**: Auto crop image (and accept changes with *{Enter}*)
 
 **Ctrl+Alt+T**: Show / Hide tray icon for example to close script (hidden on start)
 
