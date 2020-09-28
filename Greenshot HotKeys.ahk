@@ -9,8 +9,8 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Menu, Tray, Tip, Greenshot Auto crop: Ctrl+Shift+A`nToggle tray icon: Ctrl+Alt+T
 
 ; DetectHiddenWindows, On
-; If WinExist("ahk_exe Greenshot.exe")
-; 	If WinActive("ahk_exe Greenshot.exe")
+; if WinExist("ahk_exe Greenshot.exe")
+; 	if WinActive("ahk_exe Greenshot.exe")
 ; 		MsgBox, , Info, Greenshot is running, 3
 ; 	else
 ; 		MsgBox, , Info, Greenshot is running but not active, 3
@@ -20,10 +20,10 @@ Menu, Tray, Tip, Greenshot Auto crop: Ctrl+Shift+A`nToggle tray icon: Ctrl+Alt+T
 
 
 ^+a::
-IfWinExist ahk_exe Greenshot.exe
+if WinExist("ahk_exe Greenshot.exe")
 {
 	;MsgBox, , Info, Greenshot is running, 3
-	IfWinActive ahk_exe Greenshot.exe
+	if WinActive("ahk_exe Greenshot.exe")
 	{
 		;MsgBox, , Info, Greenshot is running & active, 3
 		KeyWait Control
